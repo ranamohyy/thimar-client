@@ -1,0 +1,1 @@
+part of '../views/my_account/data/suggestions/bloc.dart';

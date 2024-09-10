@@ -1,0 +1,98 @@
+name: thimar
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shimmer: ^3.0.0
+  flutter_credit_card: ^4.0.1
+  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.3
+  dio: ^5.4.0
+  flutter_offline: ^2.1.0
+  flutter_svg: ^2.0.0
+  image_picker: ^1.1.2
+  animate_do: ^3.3.4
+  easy_localization: ^3.0.3
+  shared_preferences: ^2.2.0
+  intl: ^0.19.0
+  flutter_widget_from_html: ^0.15.1
+  flutter_screenutil: ^5.7.0
+  logger: ^2.4.0
+  google_maps_flutter: ^2.7.1
+  geocoding: ^3.0.0
+  toggle_switch: ^2.3.0
+  retrofit: ^4.1.0
+  chopper: ^6.1.4
+  rate: ^0.0.2
+  intl_phone_field: ^3.2.0
+  kiwi: ^5.0.0
+  dotted_border: ^2.0.0
+  pin_code_fields: ^8.0.1
+  circular_countdown_timer: ^0.2.3
+  get_it: ^7.7.0
+  font_awesome_flutter: ^10.7.0
+  flutter_faq: ^1.0.1+1
+  html: ^0.15.4
+  fluttertoast: ^8.2.6
+  location: ^7.0.0
+  flutterfire_cli: ^1.0.0
+  firebase_core: ^3.2.0
+  awesome_notifications: ^0.9.3+1
+  firebase_messaging: ^15.0.3
+  carousel_slider: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.11
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/translations/
+    - assets/svg/
+    - assets/images/
+    - assets/google_fonts/
+    - assets/google_map_style/
+
+
+  fonts:
+    - family: tajwal
+      fonts:
+        - asset: assets/google_fonts/tajwal/Tajawal-Black.ttf
+          weight: 900
+        - asset: assets/google_fonts/tajwal/Tajawal-Bold.ttf
+          weight: 800
+        - asset: assets/google_fonts/tajwal/Tajawal-Light.ttf
+          weight: 300
+        - asset: assets/google_fonts/tajwal/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/google_fonts/tajwal/Tajawal-Regular.ttf
+          weight: 400
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

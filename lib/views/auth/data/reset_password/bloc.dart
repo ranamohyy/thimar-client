@@ -1,0 +1,25 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:thimar/core/logic/dio_helper.dart';
+
+part  'events.dart';
+part 'states.dart';
+class ResetPasswordBloc extends Bloc<ResetPasswordEvents,ResetPasswordStates> {
+  ResetPasswordBloc() :super(ResetPasswordStates()){
+    on<ResetPasswordEvent>(_sendData);
+}
+
+Future<void>_sendData (ResetPasswordEvent event,Emitter<ResetPasswordStates>emit)async{
+    
+    emit(ResetPasswordLoadingState());
+    final response = await DioHelper.send("reset_password",data:{
+    "phone":event.phone,
+      "code":event.code,
+      "password":event.passsword,
+
+    });
+    if (response.isSuccess){
+      emit(ResetPasswordSuccessState(msg: response.msg));
+
+    }else {emit (ResetPasswordFailureState(errMessage: response.msg));}
+}
+}

@@ -1,0 +1,6 @@
+[{"featureType":"road","elementType":"geometry","stylers":[{"color":"#188f0f"},
+  {"visibility":"on"},{"saturation":0}]},
+  {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#32a71b"},
+    {"visibility":"on"},{"saturation":0}]},
+  {"featureType":"all","elementType":"labels.icon",
+    "stylers":[{"color":"#309731"},{"visibility":"on"},{"saturation":0}]}]
