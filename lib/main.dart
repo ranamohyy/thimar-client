@@ -31,21 +31,18 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (context, child) => MaterialApp(
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
         debugShowCheckedModeBanner: false,
-        title: 'thimar',
+        title: 'thimar client',
         navigatorKey: navigatorKey,
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
@@ -58,8 +55,6 @@ class MyApp extends StatelessWidget {
                   maximumSize: MediaQuery.of(context).size,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusDirectional.circular(16.r)))),
-
-          // primarySwatch:MaterialColor(int,),
           colorScheme: ColorScheme.fromSeed(
               seedColor: kPrimaryColor, primary: kPrimaryColor),
           inputDecorationTheme: InputDecorationTheme(
