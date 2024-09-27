@@ -7,7 +7,6 @@ import 'package:thimar/core/design/app_image.dart';
 import 'package:thimar/core/design/app_loading.dart';
 import 'package:thimar/core/logic/helper_method.dart';
 import 'package:thimar/views/main/data/show_cart_bloc/bloc.dart';
-import 'package:thimar/views/main/home_nav/view.dart';
 import 'package:thimar/views/main/widgets/rate_product_widget.dart';
 import 'package:thimar/views/main/widgets/simillar_items_widget.dart';
 import '../../../constans.dart';
@@ -16,9 +15,10 @@ import '../cart/view.dart';
 import '../data/get_cart_bloc/send_item_cart_bloc.dart';
 import '../data/product_details/bloc.dart';
 import '../data/similar_products/similar_products_bloc.dart';
+import '../home_nav/view.dart';
 import '../widgets/custom_Fav_button.dart';
 import '../widgets/custom_bottom_bar_cart_sheet.dart';
-
+part '../widgets/custom_product_details_app_bar.dart';
 class ProductDetailsView extends StatefulWidget {
   ProductDetailsView({
     super.key,
@@ -235,38 +235,7 @@ class _ProductDetailsViewState extends State<ProductDetailsView> {
         },
       ),
       extendBodyBehindAppBar: false,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        actions: [
-          CustomFavButton(
-            id: widget.id!,
-            isFav: widget.isFav!,
-          ),
-        ],
-        leading: GestureDetector(
-          onTap: () {
-            navigateTo(const HomeNavView());
-          },
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              Container(
-                height: 43,
-                width: 43,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(14),
-                    color: kPrimaryColor.withOpacity(0.1)),
-              ),
-              const Icon(
-                FontAwesomeIcons.chevronRight,
-                color: kPrimaryColor,
-                size: 15,
-              )
-            ],
-          ),
-        ),
-      ),
+      appBar:CustomProductDetailsAppBar(id: widget.id!,isFav: widget.isFav!,),
       body: SingleChildScrollView(
         child: Column(children: [
           BlocBuilder(
