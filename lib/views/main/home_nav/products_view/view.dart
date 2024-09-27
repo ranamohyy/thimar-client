@@ -38,7 +38,6 @@ final productBloc= GetIt.I<ProductBloc>()..add(ProductEvent());
               scrollDirection: Axis.vertical,
               itemBuilder: (context, index) =>
                   Card(
-
                     elevation: 0,
                     color: Colors.white70,
                     shadowColor: Colors.white70,

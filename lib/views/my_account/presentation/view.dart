@@ -90,8 +90,7 @@ class _MyAccountPageState extends State<MyAccountPage> {
   @override
   Widget build(BuildContext context) {
     return   Scaffold(
-   floatingActionButton: CircleAvatar(child: BackButton(onPressed: (){navigateTo(HomeNavView());},color: Colors.black,)),
-        
+
       extendBodyBehindAppBar: true,
      appBar: PreferredSize(
 

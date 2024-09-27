@@ -40,12 +40,11 @@ class _CustomFavButtonState extends State<CustomFavButton> {
           Stack(
             alignment: Alignment.center,
             children: [
-              AppImage(
-                  url: "Rectangle .png",
-                  height: 42.h,
-                  width: 45.w,
-                  color: isFav == true ? kPrimaryColor :
-                  const Color(0x382B860D).withOpacity(0.11)),
+            Container(height: 43, width: 43,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                color:kPrimaryColor.withOpacity(0.1)
+            ),),
               AppImage(
                   url: "heart-empty.png",
                   height: 20.h,

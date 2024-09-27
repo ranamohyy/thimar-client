@@ -21,7 +21,7 @@ class LogInBloc extends Bloc<LogInEvents, LogInStates> {
     "user_type":"client",
     "device_token": token,
     "type":Platform.operatingSystem,
-'city_name':event.city
+      'city_name':event.city
     });
 
     if(response.isSuccess){

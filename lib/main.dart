@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:thimar/core/logic/cache_helper.dart';
 import 'package:thimar/core/logic/dio_helper.dart';
+import 'package:thimar/views/auth/presentation/login/view.dart';
 import 'package:thimar/views/main/cart/view.dart';
 import 'constans.dart';
 import 'core/get_it/get_it.dart';
@@ -31,18 +32,21 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
+      // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (context, child) => MaterialApp(
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
         debugShowCheckedModeBanner: false,
-        title: 'thimar client',
+        title: 'thimar',
         navigatorKey: navigatorKey,
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
@@ -55,6 +59,8 @@ class MyApp extends StatelessWidget {
                   maximumSize: MediaQuery.of(context).size,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusDirectional.circular(16.r)))),
+
+          // primarySwatch:MaterialColor(int,),
           colorScheme: ColorScheme.fromSeed(
               seedColor: kPrimaryColor, primary: kPrimaryColor),
           inputDecorationTheme: InputDecorationTheme(
@@ -68,7 +74,7 @@ class MyApp extends StatelessWidget {
         home: child,
       ),
 
-      child: const CartView(),
+      child: const LoginView(),
     );
   }
 }
