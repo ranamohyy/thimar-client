@@ -39,6 +39,7 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
+lib/core/logic/cache_helper.dart
 /android/app/debug
 /android/app/profile
 /android/app/release
