@@ -8,10 +8,8 @@ import '../../../core/design/app_image.dart';
 
 class CustomFavButton extends StatefulWidget {
   const CustomFavButton({super.key, required this.id, required this.isFav});
-
-  final bool isFav;
   final int id;
-
+  final bool isFav;
   @override
   State<CustomFavButton> createState() => _CustomFavButtonState();
 }
@@ -42,16 +40,16 @@ class _CustomFavButtonState extends State<CustomFavButton> {
               alignment: Alignment.center,
               children: [
                 Container(
-                  height: 43,
-                  width: 43,
+                  height: 42.h,
+                  width: 43.h,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
                       color: kPrimaryColor.withOpacity(0.1)),
                 ),
                 AppImage(
                     url: "heart-empty.png",
-                    height: 20.h,
-                    width: 20.h,
+                    height: 20.5.h,
+                    width: 20.5.h,
                     fit: BoxFit.fill,
                     color: isFav == true ? Colors.white : kPrimaryColor),
               ],
