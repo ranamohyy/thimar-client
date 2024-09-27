@@ -1,3 +1,4 @@
+
 # Miscellaneous
 *.class
 *.log
@@ -41,4 +42,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-lib/core/logic/preference_key.dart
