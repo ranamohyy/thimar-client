@@ -1,6 +1,9 @@
 # Thimar - Fruits & Vegetables E-commerce Application
 
-Thimar is an eCommerce application that specializes in selling fresh fruits and vegetables across Saudi Arabia. The app provides a seamless shopping experience with a user-friendly interface, enabling customers to browse, order, and get fresh produce delivered right to their doorstep. The platform also includes an authentication system, ensuring a personalized experience for individual users.
+Thimar is an ECommerce application that specializes in selling fresh fruits and vegetables across Saudi Arabia. The app provides a seamless shopping experience with a user-friendly interface, enabling customers to browse, order, and get fresh produce delivered right to their doorstep. The platform also includes an authentication system, ensuring a personalized experience for individual users.
+
+
+
 ![Screenshot (90)](https://github.com/user-attachments/assets/d1123a28-09ab-4aa7-8c76-7d90c3c87503)
 
 ## Some Screens
